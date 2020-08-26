@@ -1,7 +1,7 @@
 import axios from 'axios';
 import coin from './logic/coin';
 
-const url = 'https://jsonplaceholder.typicode.com/todos/1';
+const url = 'https://jsonplaceholder.typicode.com/todos/2';
 interface Todo {
     id: number;
     title:string;
@@ -27,6 +27,5 @@ const logTodo = (id:number, title:string, completed:boolean)=>{
     Is it finished : ${completed}
     `)
 }
-const coins = coin(500);
-console.log("inside get all");
-console.log("add"+coins);
+let coins = coin(20);
+console.log("Number of coins needed"+coins);
